@@ -17,6 +17,7 @@ La estructura principal incluye las carpetas para el API Gateway,
 los microservicios de Libro, Inventario, Categoría y Vehículo, 
 además de los archivos de configuración de Docker.
 
+```Bash
 /
 ├── ApiGetewayA/
 ├── CategoriaA/
@@ -31,6 +32,7 @@ además de los archivos de configuración de Docker.
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
+```
 
 Los scripts SQL (CategoriaDBA.sql, InventarioDBA.sql, LibroDBA.sql, VehiculoDBA.sql) 
 están dentro de la carpeta BaseDatos. Estos archivos contienen los esquemas, tablas, datos iniciales y 
@@ -42,6 +44,7 @@ El flujo general inicia en el Cliente, pasa por el API Gateway, interactúa con 
 (ej. Libro), publica un evento en RabbitMQ y es consumido por otro Microservicio (ej. Inventario) 
 que interactúa con SQL Server.
 
+```Bash
 Cliente
    ↓
 API Gateway :5080
@@ -53,6 +56,7 @@ RabbitMQ :15672
 Microservicio Suscriptor (Ej. Inventario :5002)
    ↓
 SQL Server (Anfitrión)
+```
 
 
 ### Guía de Ejecución y Pruebas
