@@ -81,47 +81,56 @@ Realiza las peticiones HTTP apuntando exclusivamente al puerto 5080.
 El Gateway enrutará automáticamente el tráfico:
 
 ```Bash
-* http://localhost:5080/api/libros
+http://localhost:5080/api/libros
 ```
 
 ```Bash
-* http://localhost:5080/api/inventarios
+http://localhost:5080/api/inventarios
 ```
 
 ```Bash
-* http://localhost:5080/api/categoria
+http://localhost:5080/api/categoria
 ```
 
 ```Bash
-* http://localhost:5080/api/vehiculo
+http://localhost:5080/api/vehiculo
 ```
 
 # Pruebas directas con interfaz gráfica (Swagger):
 Puedes acceder a la documentación interactiva de cada microservicio de manera independiente:
 
+* Microservicio Libro: 
 ```Bash
-* Microservicio Libro: http://localhost:5001/swagger
+http://localhost:5001/swagger
 ```
 
+* Microservicio Inventario: 
 ```Bash
-* Microservicio Inventario: http://localhost:5002/swagger
+http://localhost:5002/swagger
 ```
 
+* Microservicio Categoría: 
 ```Bash
-* Microservicio Categoría: http://localhost:5003/swagger
+http://localhost:5003/swagger
 ```
 
+* Microservicio Vehículo: 
 ```Bash
-* Microservicio Vehículo: http://localhost:5004/swagger
+http://localhost:5004/swagger
 ```
 
 # Monitoreo de Mensajería (RabbitMQ):
 Para visualizar las colas de mensajes (libro_creado, categoria_creado), ingresa al panel de administración:
 
+* URL: 
 ```Bash
-* URL: http://localhost:15672
-
-* Usuario: admin
-
-* Contraseña: admin123
+http://localhost:15672
+```
+* Usuario: 
+```Bash
+admin
+```
+* Contraseña: 
+```Bash
+admin123
 ```
